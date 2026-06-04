@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: ${{ matrix.java-version }}
-          distribution: 'zulu'    # ← только это изменилось
+          distribution: 'temurin'
 
       - name: Make gradlew executable
         run: chmod +x gradlew
